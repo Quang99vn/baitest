@@ -623,7 +623,7 @@
         padding: 0 5px;
     }
     .login-input{
-        margin: 15px 0;
+        margin: 0;
     }
      .slick-prev {
          display: none !important;
@@ -631,4 +631,44 @@
      .slick-next {
          display: none !important;
      }
+     .form-header button{
+         padding: 10px 20px;
+     }
+     .form-login input, .form-register input{
+         padding: 10px 0;
+         padding-left: 40px;
+     }
+     .button-login {
+         margin: 0;
+     }
+     .login-footer p {
+         font-size: 11px;
+     }
+     .button-login button {
+        margin: 5px 0;
+    }
+    .button-login button:last-child::after {
+        top: -82%
+    }
+    .check-login{
+        margin-top: 10px;
+    }
+    .button-login button:first-child{
+        margin-top: 10px;
+    }
+    .login-input p {
+        margin: 4px;
+        line-height: 26px;
+    }
+     .form-register input {
+        padding: 5px 0;
+        padding-left: 40px;
+    }
+    .button-login button{
+        padding: 12px 0;
+    }
+    .form {
+        padding-bottom: 0;
+    }
+
 } 
