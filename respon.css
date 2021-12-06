@@ -415,9 +415,15 @@
         height: 35px;
     }
     .icon{
-        width: 30px;
-        height: 30px;
+        width: 36px;
+        height: 36px;
         font-size: 15px;
+    }
+    .action-links {
+        right: 3px;
+    }
+    .action-links .icon {
+        margin-bottom: 10px;
     }
     .nav-icon{
         margin-right: 8px;
@@ -426,7 +432,7 @@
         width: 36px;
         height: 36px;
         font-size: 17px;
-        right: calc(-50% + 142px);
+        right: calc(-50% + 148px);
     }
     .content-search{
         height: 188px;
@@ -460,7 +466,6 @@
     }
     .spacing{
         padding-left: 15px;
-        padding-right: 15px;
     }
     .blog-menu2 {
         left: 47%;
