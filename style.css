@@ -222,7 +222,6 @@ button {
     right: 0;
     padding: 8px;
     display: none;
-    z-index: 1;
 }
 .navbar-list {
     display: flex;
@@ -822,8 +821,10 @@ button {
 .slider-wrap {
     width: 100%;
     background-image: url(./images/silder1.png);
-    background-position: 100% 40%;
+    background-position: right;
+    background-size: contain;
     background-repeat: no-repeat;
+    position: relative;
 }
 .slider-content {
     padding-top: 150px;
@@ -1310,13 +1311,16 @@ button {
 .baner-deal{
     background-image: url(./images/banner-deal.png);
     background-size: cover;
-    height: 700px;
+    background-position: center;
+    height: 600px;
+    position: relative;
 }
 .banner-deal-wrap{
+    position: absolute;
     width: 425px;
-    position: relative;
-    top: 225px;
-    left: 15%;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
 }
 .deal-content{
     color: #FFF;
@@ -1474,6 +1478,7 @@ button {
 .footer{
     width: 100%;
     background-image: url(./images/Background-footer.png);
+    background-size: cover;
 }
 .header-footer {
     border-bottom: 1px solid #484492;
