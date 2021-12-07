@@ -43,9 +43,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 10px 0;
 }
 .green {
     color: #95ae3c !important;
@@ -271,7 +269,7 @@ button {
     line-height: 17px;
     width: 40px;
     height: 40px;
-    margin-left: 6px;
+    margin-left: 10px;
     border-radius: 50%;
     position: relative;
 }
@@ -656,7 +654,7 @@ button {
 .hover-homemenu,.hover-shopmenu,
 .hover-pagehome, .hover-bloghome {
     position: absolute;
-    top:calc(100% + 9px);
+    top:calc(100% + 10px);
     left: 20px;
     width: 200px;
     height: auto;
@@ -691,7 +689,8 @@ button {
 .homemenu-item {
     width: 100%;
     display: inline-block;
-    margin-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 5px;
 }
 .homemenu-item:last-child {
     margin-bottom: 0;
@@ -892,7 +891,7 @@ button {
 .slick-prev {
     position: absolute;
     top: 50%;
-    left: 6%;
+    left: -10%;
     transform: translateY(-50%);
     background-color: #96AE00;
     opacity: 0.3;
@@ -904,7 +903,7 @@ button {
 .slick-next {
     position: absolute;
     top: 50%;
-    left: 93%;
+    left: 105%;
     transform: translateY(-50%);
     background-color: #96AE00;
     opacity: 0.3;
@@ -981,6 +980,7 @@ button {
 /* food */
 .food {
     margin: 20px 0;
+    margin-top: 70px;
 }
 .title {
     width: 100%;
@@ -1040,7 +1040,7 @@ button {
 
 .product-item {
     background-color: #F6F8F4;
-    padding: 15px 20px;
+    padding: 15px 10px;
     text-align: left;
 }
 .product-item span {
@@ -1055,11 +1055,15 @@ button {
     line-height: 16px;
     margin-bottom: 12px;
 }
+.icon-start{
+    line-height: 1;
+}
 .icon-start i{
     color: #FFB800;
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
+    letter-spacing: -4px;
 }
 .icon-start span{
     font-family: 'Dosis';
@@ -1067,12 +1071,16 @@ button {
     line-height: 15px;
     font-weight: 500;
     color: #79819C;
+    margin-left: 4px;
 }
-.product-item p,.product-item-footer p span {
+.product-item p {
     font-family: 'Dosis';
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
+}
+.product-item-footer p span{
+    font-size: 12px;
 }
 .product-item-footer p strong{
     color: #EA0D42;
@@ -1156,20 +1164,20 @@ button {
     width: 100%;
 }
 .product-slider .slick-prev {
-    left: 0;
-    transform: translateX(-50%);
+    left: -20px;
 }
 .product-slider .slick-next {
     left: unset;
-    right: 0;
-    transform: translateX(50%);
+    right: -20px;
 }
 /*best for you */
 .foryou-wrap{
     background-image: url(./images/bg-foryou.png);
     width: 100%;
-    height: 548px;
-    background-size: cover;
+    height: 470px;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
     margin-top: 50px;
     display: flex;
     flex-direction: row-reverse;
@@ -1177,7 +1185,9 @@ button {
 }
 .foryou-content{
    max-width: 420px;
+   margin-top: 50px;
 }
+
 .foryou-content p {
     font-family: 'Schoolbell';
     color: #96AE00;
@@ -1284,6 +1294,10 @@ button {
 }
 .product-item h4{
     letter-spacing: -0.2px;
+    display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
 }
 .view-hot-item{
     margin-bottom: 35px;
