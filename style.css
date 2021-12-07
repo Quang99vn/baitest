@@ -218,6 +218,9 @@ button {
     padding: 8px;
     display: none;
 }
+.navmb-close:hover {
+    color: #96AE00;
+}
 .navbar-list {
     display: flex;
 }
@@ -247,10 +250,10 @@ button {
     padding-left: 0;
 }
 .navbar-item span i {
-    padding-left: 6px;
+    padding-left: 5px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 31px;
+    font-size: 12px;
+    line-height: 35px;
     position: absolute;
     top: 7px;
 }
@@ -262,8 +265,6 @@ button {
 .icon {
     color: #2D2A6E;
     display: inline-block;
-    font-size: 17px;
-    line-height: 17px;
     width: 40px;
     height: 40px;
     margin-left: 10px;
@@ -271,11 +272,13 @@ button {
     position: relative;
 }
 
-.icon i {
+.icon img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 17px;
+    height: 17px;
 }
 /* search */
 .search-icon {
@@ -335,11 +338,13 @@ button {
     right:0;
     transform: translate(-50%, -13%);
 }
-.close i{
-    padding: 20px;
-    font-size: 18px;
-    line-height: 48px;
-    padding-right: 0;
+.close-search {
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
+.close i:hover {
+    color: #96AE00;
 }
 
 .search-history{
@@ -420,7 +425,7 @@ button {
     transition: linear 0.3s;
 }
 .form {
-    padding: 20px;
+    padding: 20px 40px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -428,6 +433,7 @@ button {
     width: 500px;
     background-color: #FFF;
     border-radius: 8px;
+    padding-bottom: 40px;
 }
 .form-header {
     display: flex;
@@ -444,6 +450,18 @@ button {
     background-color: transparent;
     border-bottom: 3px solid #B0AFCC;
 }
+.form-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #2D2A6E;
+}
+.form-close:hover {
+    color: #96AE00;
+}
 .active-button {
     color: #96AE00 !important;
     border-bottom: 3px solid #96AE00 !important;
@@ -452,14 +470,18 @@ button {
     color: #96AE00;
     border-bottom: 3px solid #96AE00;
 }
-.form-login p{
+.form-login,.form-register {
+    margin-top: 40px;
+}
+.form-login p,.form-register p{
     font-size: 14px;
     line-height: 14px;
     font-weight: 500;
+    margin: 5px 0;
 }
 .form-login input,
 .form-register input{
-    padding: 14px 0px;
+    padding: 8px 0px;
     padding-left: 40px;
     width: 96%;
     color:  #CFD4DE;
@@ -471,24 +493,46 @@ button {
 .form-register input:focus {
     border: 1px solid #96AE00;
 }
-.login-input{
-    margin: 30px 0;
+.login-input,.form-register-item{
+    margin-bottom: 16px;
     position: relative;
-    margin-bottom: 12px;
 }
-.login-input p {
-    margin: 10px 0;
+.login-input:nth-child(2),
+.form-register-item:nth-child(3) {
+    margin: 0;
+    margin-bottom: 8px;
 }
-.login-input i {
+.login-input img {
+    width: 15px;
+    height: 15px;
+}
+
+.login-input .icon-user-form,.login-input .icon-pass-form,
+.form-register-item .icon-user-form,
+.form-register-item .icon-pass-form {
     position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(60%);
+    left: 13px;
+    top: 33px;
+}
+.login-input .eyes-form,
+.form-register-item .eyes-form {
+    position: absolute;
+    left: 89%;
+    top: 35px;
 }
 .check-login{
     display: flex;
     justify-content: space-between;
     width: 96%;
+}
+.check-login p {
+    font-size: 12px;
+    line-height: 12px;
+}
+.check-login p:first-child{
+    display: flex;
+    align-items: baseline;
+    gap: 0 4px;
 }
 .remember{
     display: inline-block;
@@ -497,34 +541,46 @@ button {
     width: 14px;
 }
 .button-login{
-    margin-top: 15px;
+    margin-top: 14px;
 }
 .button-login button{
     font-size: 12px;
     font-weight: 700;
     line-height: 1;
-    padding: 15px 0;
+    padding: 17px 0;
     width: 96%;
     border-radius: 4px;
     margin: 15px 0;
     text-transform: uppercase;
+    transition: linear 0.3s;
 }
 .button-login button:first-child {
     background-color: #96AE00;
     color: #FFF;
 }
+.button-login button:first-child:hover {
+    background-color: #859A00;
+}
 .button-login button:last-child {
     background-color: #FFF;
     color: #96AE00;
     border: 1px solid #96AE00;
+    padding: 15px 0;
     position: relative;
+}
+.button-login button:last-child:hover {
+    background-color: #96AE00;
+    color: #FFF;
+}
+.button-login hr {
+    margin: 5px 0;
 }
 .button-login button:last-child::after {
     content: "or";
     font-size: 12px;
     font-weight: 500;
     position: absolute;
-    top:-109%;
+    top:-81%;
     left: 50%;
     transform: translateX(-50%);
     padding: 5px 10px;
@@ -533,7 +589,7 @@ button {
     text-transform: initial;
 }
 .login-footer{
-    margin: 20px 0;
+    margin: 11px 0;
 }
 .login-footer p{
     font-size: 14px;
@@ -563,6 +619,7 @@ button {
     right: -4px;
     width: 18px;
     height: 18px;
+    line-height: 18px;
     text-align: center;
     font-size: 10px;
     color: #FFF;
@@ -585,19 +642,22 @@ button {
     transition: linear 0.3s;
 }
 .bag-header{
-    padding: 15px 30px;
+    padding: 16px 30px;
     background-color: #F4F6F2;
     display: flex;
     justify-content: space-between;
 }
 .bag-header p {
     font-size: 12px;
-    line-height: 1;
+    line-height: 1.5;
     font-weight: 700;
     text-transform: uppercase;
 }
 .bag-header i {
-    font-size: 14px;
+    font-size: 18px;
+}
+.bag-header i:hover {
+    color: #96AE00;
 }
 .bag-container{
     text-align: center;
@@ -652,7 +712,7 @@ button {
 .hover-homemenu,.hover-shopmenu,
 .hover-pagehome, .hover-bloghome {
     position: absolute;
-    top:calc(100% + 16px);
+    top:calc(100% + 17px);
     left: 20px;
     width: 200px;
     height: auto;
@@ -867,12 +927,11 @@ button {
     text-transform: uppercase;
 }
 .button:hover {
-    background-color: #FFF;
-    border: 1px solid #96AE00;
+    background-color: #859A00;
     transition: linear 0.3s;
 }
 .button:hover a {
-    color: #96AE00;
+    color: #FFF;
 }
 
 /* dot silder */
@@ -900,7 +959,7 @@ button {
 .slick-next {
     position: absolute;
     top: 50%;
-    left: 105%;
+    left: 104%;
     transform: translateY(-50%);
     background-color: #96AE00;
     opacity: 0.3;
@@ -997,6 +1056,7 @@ button {
     font-size: 30px;
     font-weight: 700;
     line-height: 37px;
+    text-transform: uppercase;
     margin-bottom: 30px;
 }
 .hot-item .title h3 {
@@ -1167,9 +1227,13 @@ button {
     width: 100%;
 }
 .product-slider .slick-prev {
+    width: 50px;
+    height: 50px;
     left: -20px;
 }
 .product-slider .slick-next {
+    width: 50px;
+    height: 50px;
     left: unset;
     right: -20px;
 }
@@ -1237,28 +1301,35 @@ button {
     display: flex;
     margin: 30px 0;
 }
+.foryou-button{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0 20px;
+}
 .foryou-button button{
     font-size: 12px;
     line-height: 1;
     font-weight: 700;
-    background-color: #2D2A6E;
     width: 100%;
-    color: #FFF;
-    text-transform: uppercase;
     padding: 15px 0;
     outline: none;
+    text-transform: uppercase;
     border-radius: 50px;
 }
-.foryou-button:first-child{
-    padding-left: 0;
+.foryou-button button:first-child{
+    background-color: #2D2A6E;
+    color: #FFF;
 }
-.foryou-button:last-child{
-    padding-right: 0;
-}
-.foryou-button:hover button {
-    background-color: #FFF;
+.foryou-button button:last-child {
     color: #96AE00;
+    background-color: #FFF;
     border: 1px solid #96AE00;
+}
+.foryou-button button:first-child:hover,
+.foryou-button button:last-child:hover {
+    background-color: #96AE00;
+    color: #FFF;
     transition: linear 0.3s;
 }
 /* banner */
@@ -1402,24 +1473,30 @@ button {
 .deal-button button{
     width: 45%;
     margin-right: 18px;
-    background: transparent;
     border: 2px solid #FFF;
     border-radius: 50px;
     padding: 5px 0;
-    transition: linear 0.3s;
-    margin-top: 15px;
-}
-.deal-button button a {
-    color: #FFF;
     font-size: 12px;
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
+    transition: linear 0.3s;
+    margin-top: 15px;
 }
-.deal-button button:hover{
+.deal-button button:first-child {
     background-color: #FFF;
+    color: #96AE00;
 }
-.deal-button button:hover a{
+.deal-button button:first-child:hover {
+    color: #FFF;
+    background-color: transparent;
+}
+.deal-button button:last-child {
+    color: #FFF;
+    background-color: transparent;
+}
+.deal-button button:last-child:hover {
+    background-color: #FFF;
     color: #96AE00;
 }
 
@@ -1604,13 +1681,16 @@ button {
     line-height: 1;
     font-weight: 700;
     padding: 15px 30px;
-    background-color: #95ae3c;
+    background-color: #96AE00;
     color: #FFF;
     text-transform: uppercase;
     border-radius: 4px;
     position: absolute;
-    top: 121px;
+    top: 120px;
     right: 31px;
+}
+.input button:hover {
+    background-color: #859A00;
 }
 .input p {
     margin-top: 15px;

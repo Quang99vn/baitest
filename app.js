@@ -124,7 +124,7 @@ var fuT = new Date("jan 1,2022 00:00:00").getTime()
 
     }
 
-    const closeUser = document.querySelector('.form-header i')
+    const closeUser = document.querySelector('.form-close')
     closeUser.onclick = function() {
         document.querySelector('.form-user').style.display = 'none'
         document.querySelector('.form-user').classList.remove('overlay')
