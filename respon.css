@@ -725,11 +725,20 @@
     .login-input{
         margin: 0;
     }
-     .slick-prev {
-         display: none !important;
+    .slick-prev {
+         width: 36px;
+         height: 36px;
+         left: 0;
      }
-     .slick-next {
-         display: none !important;
+     .product-slider .slick-prev {
+        left: 0px;
+    }
+    .product-slider .slick-next {
+        right: 0px;
+    }
+    .slick-next {
+         width: 36px;
+         height: 36px;
      }
      .form-header button{
          padding: 10px 20px;
