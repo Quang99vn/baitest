@@ -43,7 +43,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 .green {
     color: #95ae3c !important;
@@ -201,12 +201,9 @@ button {
 /* menu */
 .nav-mobile{
     display: none;
-    font-size: 18px;
-    position: relative;
-    right: calc(-50% + 173px);   
+    font-size: 18px;   
     width: 40px;
     height: 40px;
-    margin-left: 6px;
     border-radius: 50%;
     background-color: #e9ecef;
     text-align: center;
@@ -342,6 +339,7 @@ button {
     padding: 20px;
     font-size: 18px;
     line-height: 48px;
+    padding-right: 0;
 }
 
 .search-history{
@@ -654,7 +652,7 @@ button {
 .hover-homemenu,.hover-shopmenu,
 .hover-pagehome, .hover-bloghome {
     position: absolute;
-    top:calc(100% + 10px);
+    top:calc(100% + 16px);
     left: 20px;
     width: 200px;
     height: auto;
@@ -820,14 +818,13 @@ button {
 .slider-wrap {
     width: 100%;
     background-image: url(./images/silder1.png);
-    background-position: right;
+    background-position: 364px;
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
 }
 .slider-content {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding: 100px 0;
 }
 .slider-content .tagline{
     display: inline-block;
@@ -944,12 +941,15 @@ button {
 }
 /* category */
 .category{
-    margin: 30px 0;
+    margin: 20px 0px;
+}
+.category-wrap{
+    display: flex;
+    gap: 0 20px;
 }
 .category-item{
-    width: 100%;
     text-align: center;
-    padding: 30px 0; 
+    padding: 30px 20px; 
     background-color: #FFF;
     border-radius: 6px;
     box-shadow: 0px 2px 2px rgb(230, 229, 229);
@@ -961,12 +961,12 @@ button {
     margin-bottom: 20px;
 }
 .category-item p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1;
     font-weight: 700;
 }
 .category-item span{
-    font-size: 11px;
+    font-size: 10px;
     line-height: 11px;
     font-weight: 500;
     color: #334763;
