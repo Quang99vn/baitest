@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.slider-img').slick(
         {
             slidesToScroll: 1,
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: 2000,
             arrows: true,
             prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left slick-arrow" aria-hidden="true"></i></div>',
@@ -94,7 +94,7 @@ var fuT = new Date("jan 1,2022 00:00:00").getTime()
 
     }
     bagClose.onclick = function() {
-        document.querySelector('.bag-wrap').style.transform = 'translateX(100%)'
+        document.querySelector('.bag-wrap').style.transform = 'translateX(110%)'
         document.querySelector('.bag-content').classList.remove('overlay')
     }
 
