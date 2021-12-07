@@ -1550,18 +1550,16 @@ button {
 .social-icon {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 5px 0;
-    padding-right: 20px;
 }
 .social-icon i{
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     color: #2D2A6E;
     background-color: #FFF;
     text-align: center;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 22px;
     border-radius: 50%;
 }
 .social-icon i:hover {
