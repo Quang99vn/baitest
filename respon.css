@@ -370,6 +370,7 @@
     }
     .close-search {
         padding: 0 20px;
+        padding-right: 0;
     }
 }
 
