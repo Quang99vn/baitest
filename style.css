@@ -56,8 +56,14 @@ button {
 .display-none{
     display: none !important;
 }
-.padding-8 {
-    padding: 0 8px;
+.padding-10 {
+    padding: 0 10px;
+}
+.pl-0 {
+    padding-left: 0;
+}
+.pr-0 {
+    padding-right: 0;
 }
 .overlay{
     position: fixed;
@@ -201,14 +207,16 @@ button {
 /* menu */
 .nav-mobile{
     display: none;
-    font-size: 18px;   
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: #e9ecef;
     text-align: center;
-    line-height: 40px; 
     z-index: 100;
+}
+.nav-mobile i{
+    font-size: 18px;   
+    line-height: 40px;
 }
 .navmb-close{
     display: none;
@@ -339,9 +347,11 @@ button {
     transform: translate(-50%, -13%);
 }
 .close-search {
-    position: relative;
-    top: 20px;
-    right: 20px;
+    position: absolute;
+    top: 0;
+    right:0 ;
+    padding: 30px;
+    font-size: 22px;
 }
 .close i:hover {
     color: #96AE00;
@@ -455,7 +465,7 @@ button {
     top: 0;
     right: 0;
     padding: 20px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     color: #2D2A6E;
 }
@@ -507,7 +517,11 @@ button {
     height: 15px;
 }
 
-.login-input .icon-user-form,.login-input .icon-pass-form,
+.login-input .icon-user-form,.login-input .icon-pass-form {
+    position: absolute;
+    left: 13px;
+    top: 33px;
+}
 .form-register-item .icon-user-form,
 .form-register-item .icon-pass-form {
     position: absolute;
@@ -792,6 +806,7 @@ button {
 .img-shopmenu img {
     width: 100%;
     padding-top: 36px;
+    border-bottom-right-radius: 6px;
 }
 .shopmenu-item li:hover a,
 .hover-pagehome li:hover a,
@@ -878,8 +893,8 @@ button {
 .slider-wrap {
     width: 100%;
     background-image: url(./images/silder1.png);
-    background-position: 364px;
-    background-size: contain;
+    background-position: 338px -46px;
+    background-size: 1098px 750px;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -1005,6 +1020,10 @@ button {
 .category-wrap{
     display: flex;
     gap: 0 20px;
+    justify-content: space-between;
+}
+.category-slide {
+    width: 160px;
 }
 .category-item{
     text-align: center;
@@ -1020,12 +1039,12 @@ button {
     margin-bottom: 20px;
 }
 .category-item p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1;
     font-weight: 700;
 }
 .category-item span{
-    font-size: 10px;
+    font-size: 11px;
     line-height: 11px;
     font-weight: 500;
     color: #334763;
@@ -1103,7 +1122,7 @@ button {
 
 .product-item {
     background-color: #F6F8F4;
-    padding: 15px 10px;
+    padding: 20px;
     text-align: left;
 }
 .product-item span {
@@ -1111,12 +1130,6 @@ button {
     line-height: 15px;
     font-weight: 600;
     color: #00B853;
-}
-.product-item h4{
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 16px;
-    margin-bottom: 12px;
 }
 .icon-start{
     line-height: 1;
@@ -1163,6 +1176,7 @@ button {
     background-color: #FFF;
     border-radius: 100%;
     text-align: center;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.06);
 }
 .product-footer-icon i{
     font-size: 14px;
@@ -1190,10 +1204,9 @@ button {
     visibility: hidden;
 }
 .action-links a i {
-    width: 36px;
-    height: 36px;
     border: 1px solid #E6EBF0;
     color: #9999B8;
+    padding: 10px;
     border-radius: 100%;
     font-size: 14px;
     line-height: 36px;
@@ -1225,6 +1238,7 @@ button {
 .product-slider{
     display: flex;
     width: 100%;
+    gap: 0 10px;
 }
 .product-slider .slick-prev {
     width: 50px;
@@ -1236,6 +1250,9 @@ button {
     height: 50px;
     left: unset;
     right: -20px;
+}
+.product-wrap {
+    padding: 0 10px;
 }
 /*best for you */
 .foryou-wrap{
@@ -1366,8 +1383,11 @@ button {
 .hot-item-product{
     margin: 30px 0;
 }
-.product-item h4{
-    letter-spacing: -0.2px;
+.product-item h4 {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-bottom: 12px;
     display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
@@ -1630,13 +1650,13 @@ button {
     padding: 5px 0;
 }
 .social-icon i{
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
     color: #2D2A6E;
     background-color: #FFF;
     text-align: center;
-    font-size: 12px;
-    line-height: 22px;
+    font-size: 15px;
+    line-height: 25px;
     border-radius: 50%;
 }
 .social-icon i:hover {
@@ -1660,6 +1680,7 @@ button {
 }
 .input {
     margin: 20px 0;
+    position: relative;
 }
 .input-email {
     padding: 10px;
@@ -1667,14 +1688,13 @@ button {
     border-radius: 4px;
     outline: none;
     border: none;
-    position: relative;
     padding-left: 40px;
 }
 .input img{
     font-size: 14px;
     position: absolute;
-    top: 135px;
-    left: 41px;
+    top: 24%;
+    left: 3%;
 }
 .input button {
     font-size: 12px;
@@ -1686,8 +1706,8 @@ button {
     text-transform: uppercase;
     border-radius: 4px;
     position: absolute;
-    top: 120px;
-    right: 31px;
+    top: 3%;
+    right: 1%;
 }
 .input button:hover {
     background-color: #859A00;

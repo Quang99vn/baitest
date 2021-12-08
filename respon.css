@@ -1,24 +1,45 @@
-@media (max-width: 1479px) {
-    .container {
-        max-width: 1410px;
-    }
+
+
+
+@media(max-width: 1399px) {
     .slider-wrap {
-        background-position: 255px -136px;
-        background-size: auto;
-        background-repeat: no-repeat;
+        background-position: 383px 0px;
+        background-size: contain
     }
     .slick-prev {
-        left: -50px;
+        left: -41px;
     }
     .slick-next {
         left: 97.5%;
     }
+    .category-wrap {
+        gap: 0 20px;
+    }
     .category-item {
-        padding: 30px 37px;
+        padding: 15px;
+    }
+    .category-item p{
+        font-size: 13px;
+    }
+    .category-item span{
+        font-size: 10px;
+    }
+    .blog-menu1 {
+        padding: 5px 0;
+    }
+    .bag-header i {
+        padding-right: 0;
+    }
+    .product-item {
+        padding:15px;
+    }
+    .input img{
+        top: 20%;
     }
 }
 
 @media (max-width: 1199px){
+   
     .top-header-text, .top-header ul li{
         font-size: 10px;
         letter-spacing: -0.5px;
@@ -62,12 +83,12 @@
         padding:10px 5px;
     }
     .input button {
-        top:141px;
+        top:5%;
         font-size: 10px;
         padding: 15px 15px;
     }
     .input img{
-        top: 154px;
+        top:19%;
     }
     .content-footer{
         padding-bottom: 0;
@@ -90,7 +111,19 @@
         background-size: contain;
         background-position: 260px;
     }
+    .product-footer-icon i {
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .product-footer-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .product-item p {
+        font-size: 13px;
+    }
 }
+
 @media (max-width: 991px) {
     .USD-list{
         width: 50px;
@@ -218,6 +251,15 @@
         padding: 10px 0;
         border-bottom: 1px solid #bdca8c;
     }
+    .hover-homemenu, .hover-shopmenu, .hover-pagehome, .hover-bloghome {
+        box-shadow: none;
+    }
+    .img-shopmenu img{
+        padding: 0;
+    }
+    .pagehome-item {
+        padding: 5px;
+    }
     .homemenu-item,.pagehome-item {
         border-bottom: 1px solid #bdca8c;
     }
@@ -249,11 +291,11 @@
     }
     .hover-pagehome{
         top: -85px;
-        padding: 24px;
+        padding: 31px;
     }
     .hover-bloghome{    
         top: -133px;
-        padding: 16px;
+        padding: 10px;
     }
     .blog-menu2{
         left: 73%;
@@ -292,11 +334,13 @@
         margin-bottom: 10px;
     }
     .input button {
-        top: 101px;
-        right: 33px;
+        top: 6%;
+        right: 3px;
+        padding: 15px 30px;
     }
     .input img{
-        top: 115px;
+        top: 23%;
+        left: 5px
     }
     .Engl-USD{
         display: none;
@@ -312,6 +356,8 @@
     .category-wrap {
         gap: 0 10px;
     }
+    
+
 }
 
 @media (max-width: 767px) {
@@ -482,6 +528,10 @@
         height: 25px;
         font-size: 12px;
     }
+    .icon img {
+        width: 12px;
+        height: 12px;
+    }
     .bag-icon span{
         width: 12px;
         height: 12px;
@@ -500,9 +550,6 @@
     .nav-mobile{
         width: 25px;
         height: 25px;
-        font-size: 12px;
-        line-height: 25px;
-        font-weight: 700;
     }
     .nav-mobile:hover {
         color: #95ae3c;
@@ -631,10 +678,11 @@
         background-position: right;
     }
     .input button{
-        top: 107px;
+        top: 5%;
+        right: 3px;
     }
     .input img {
-        top: 119px;
+        top: 23%;
     }
     .copyright-wrap{
         display: unset;
@@ -663,7 +711,7 @@
         display: block;
     }
     .homemenu-item{
-        padding: 11px 0;
+        padding: 8px 0;
         margin: 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     }
@@ -673,6 +721,9 @@
         padding-bottom: 15px;
         line-height: 1px;
         padding-top: 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
+    }
+    .pagehome-item {
         border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
     }
     .shopmenu-item li a{
@@ -705,7 +756,6 @@
         top: 9px;
     }
     .pagehome-item a{
-        padding: 10px 0;
         display: block;
         margin: 0;
         width: 100%;
@@ -717,7 +767,7 @@
         display: none;
     }
     .bloghome-item {
-        padding: 10px 0;
+        padding: 5px 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
     }
     .navmb-close{
@@ -767,10 +817,6 @@
      .form-header button{
          padding: 10px 20px;
      }
-     .form-login input, .form-register input{
-         padding: 10px 0;
-         padding-left: 40px;
-     }
      .button-login {
          margin: 0;
      }
@@ -778,27 +824,29 @@
          font-size: 11px;
      }
      .button-login button {
-        margin: 5px 0;
+        margin: 10px 0;
     }
     .button-login button:last-child::after {
-        top: -82%
+        top: -65%;
+        padding: 0 10px;
     }
     .check-login{
-        margin-top: 10px;
+        margin-top: 0;
+    }
+    .login-input:nth-child(2), .form-register-item:nth-child(3) {
+        margin-bottom: 0;
     }
     .button-login button:first-child{
         margin-top: 10px;
+        padding: 12px 0;
     }
     .login-input p {
         margin: 4px;
         line-height: 26px;
     }
-     .form-register input {
+    .form-login input,.form-register input {
         padding: 5px 0;
         padding-left: 40px;
-    }
-    .button-login button{
-        padding: 12px 0;
     }
     .form {
         padding-bottom: 0;
@@ -844,4 +892,25 @@
         line-height: 30px;
         font-size: 9px;
     }
+    .nav-mobile i {
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .login-input .icon-user-form, .login-input .icon-pass-form {
+        top: 42px;
+    }
+    .login-input .eyes-form {
+        top: 42px;
+    }
+    .button-login button:last-child {
+        padding: 12px 0;
+    }
+    .bag-footer p{
+        padding: 15px;
+    }
+    .bag-header{
+        padding: 15px;
+    }
 }
+
+
