@@ -109,7 +109,7 @@
     }
     .slider-wrap {
         background-size: contain;
-        background-position: 260px;
+        background-position: 225px;
     }
     .product-footer-icon i {
         font-size: 12px;
@@ -707,11 +707,11 @@
         background-position: right;
     }
     .input button{
-        top: 5%;
+        top: 4%;
         right: 3px;
     }
     .input img {
-        top: 23%;
+        top: 18%;
     }
     .copyright-wrap{
         display: unset;
@@ -902,10 +902,10 @@
         margin-bottom: 30px;
     }
     .foryou-content h3 {
-        font-size: 26px;
+        font-size: 25px;
     }
     .foryou-content p{
-        font-size: 15px;
+        font-size: 13px;
     }
     .foryou-button-wrap{
         margin: 10px 0;
@@ -948,6 +948,12 @@
     .close-search {
         top: 10px;
         right: 10px;
+    }
+    .title h3 {
+        font-size: 25px;
+    }
+    .title p {
+        font-size: 15px;
     }
 }
 
