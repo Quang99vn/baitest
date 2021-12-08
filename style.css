@@ -348,9 +348,8 @@ button {
 }
 .close-search {
     position: absolute;
-    top: 0;
-    right:0 ;
-    padding: 30px;
+    top: 30px;
+    right:30px ;
     font-size: 22px;
 }
 .close i:hover {
