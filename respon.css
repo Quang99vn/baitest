@@ -1,24 +1,15 @@
 @media(min-width: 1400px) {
-    .slider {
-        background-position: 85% 56px;
-        background-size: 1134px 760px;
-    }
-    .slick-next{
-        left: 99%;
-    }
-    .slick-prev{
-        left: -49px;
-    }
+  
 }
 
 
 @media(max-width: 1399px) {
-    .slider {
-        background-position: 210px 56px;
-        background-size: 1134px 760px;
+    .slider-content {
+        background-position: 123% 3px;
+        background-size: 900px;
     }
     .slick-prev {
-        left: -2%;
+        left: -4%;
     }
     .slick-next {
         left: 97.5%;
@@ -47,6 +38,9 @@
     .input img{
         top: 20%;
     }
+    .baner-deal {
+        height: 436px;
+    }
 }
 
 @media (max-width: 1199px){
@@ -60,17 +54,14 @@
         font-size: 10px;
     }
     .slick-prev{
-        left: -10px;
+        left: -3%;
     }
     .slick-next{
         left: 95%;
     }
-    .slider {
-        background-position: 120px 79px;
-        background-size: 978px 650px;
-    }
     .slider-content{
-        padding-left: 10px;
+        background-position: 135% -6px;
+        background-size: 750px;
     }
     .category-item{
         padding: 20px;
@@ -144,6 +135,9 @@
         font-size: 10px;
         line-height: 30px;
     }
+    .slider-content .tagline{
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -178,10 +172,6 @@
     }
     .line{
         display: none;
-    }
-    .slider {
-        background-size: contain;
-        background-position: 87px 50px;
     }
     .slick-prev{
         left: -18px;
@@ -246,9 +236,6 @@
     }
     .product-item{
         padding: 15px 10px;
-    }
-    .icon{
-        margin-left: 5px;
     }
 
     /*  */
@@ -396,14 +383,34 @@
         padding: 0 20px;
         padding-right: 0;
     }
+    .slider-content{
+        padding-top: 80px;
+        background-position: 231% -6px;
+        background-size: 660px;
+    }
+    .slider-content h1 {
+        font-size: 60px;
+        line-height: 68px;
+    }
+    .slider-content-text{
+        margin-bottom: 40px;
+    }
+    .heart-content {
+        width: 600px;
+        padding: 30px;
+    }
 }
 
 @media (max-width: 767px) {
     .top-header{
         height: 22px;
+        text-align: center;
     }
     .top-header-text,.top-header ul li {
-        font-size: 7px;
+        font-size: 8px;
+    }
+    .nav-icon-list {
+        gap: 0 5px;
     }
     .spacing {
         padding: 5px 0;
@@ -533,7 +540,12 @@
         justify-content: center;
     }
     .slick-next {
-        left: 82%;
+        left: 90%;
+    }
+    .slider-content{
+        padding-top: 30px;
+        background-position: 23% 205px;
+        background-size: 530px;
     }
     .slider-content h1 {
         font-size: 56px;
@@ -542,6 +554,10 @@
         padding: 0;
         font-size: 18px;
     }
+    .mb-none{
+        display: none;
+    }
+    
 }
 
 @media only screen and (max-device-width: 479px) {
@@ -573,6 +589,10 @@
     .icon img {
         width: 12px;
         height: 12px;
+    }
+    .icon i{
+        font-size: 12px;
+        line-height: 25px;
     }
     .bag-icon span{
         width: 12px;
@@ -655,10 +675,6 @@
         font-size: 42px;
         line-height: 1;
     }
-    .slider{
-        background-position: right bottom;
-        background-size: contain;
-    }
     .slider-content button{
         padding: 10px 20px;
     }
@@ -666,7 +682,12 @@
         margin-bottom: 20px;
     }
     .slider-content{
-        padding: 50px 20px;
+        background-position: 28% 115px;
+        background-size: 350px;
+        padding: 30px;
+    }
+    .slider {
+        background-size: cover;
     }
     .form{
         width: 350px;
@@ -980,6 +1001,24 @@
     }
     .title p {
         font-size: 15px;
+    }
+    .heart-content {
+        width: 300px;
+        padding: 20px;
+    }
+    .heart-title h3 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .heart-content button{
+        padding: 10px 40px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .heart-close i{
+        font-size: 14px;
+        top: 20px;
+        right: 20px;
     }
 }
 

@@ -72,7 +72,7 @@ button {
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 100;
+    z-index: 10;
 }
 
 /* header */
@@ -277,7 +277,6 @@ button {
     display: inline-block;
     width: 40px;
     height: 40px;
-    margin-left: 10px;
     border-radius: 50%;
     position: relative;
 }
@@ -289,6 +288,13 @@ button {
     transform: translate(-50%, -50%);
     width: 17px;
     height: 17px;
+}
+.icon i{
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 /* search */
 .search-icon {
@@ -618,8 +624,69 @@ button {
     color: #96AE00;
     text-decoration: underline ;
 }
-
-
+/* heart */
+.heart-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #F2F5EF;
+    text-align: center;
+}
+.slider-heart{
+    display: flex;
+    gap: 0 20px;
+    line-height: 1;
+}
+.heart-close i {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 24px;
+}
+.heart-close i:hover {
+    color: #96AE00;
+}
+.heart-title{
+    line-height: 1;
+    text-align: center;
+}
+.heart-title h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #2D2A6E;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.slider-heart .product-item {
+    padding: 15px;
+}
+.slider-heart .product-wrap {
+    width: 218px;
+}
+.slider-heart .slick-prev {
+    left: -21px;
+}
+.slider-heart .slick-next {
+    left: 95.5%;
+}
+.heart-content button {
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFF;
+    padding: 15px 70px;
+    background-color: #96AE00;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+.heart-content button:hover {
+    background-color: #859A00;
+    transition: linear 0.3s;
+}
 
 /* bag */
 .bag-icon {
@@ -627,6 +694,7 @@ button {
 }
 .nav-icon-list{
     display: flex;
+    gap: 0 10px;
 }
 .bag-icon span {
     position: absolute;
@@ -889,13 +957,14 @@ button {
 /* slider */
 .slider{
     padding-top: 113px;
-    background-image: url(./images/silder1.png);
-    background-position: 675px 56px;
-    background-size: 1134px 760px;
-    background-repeat: no-repeat;
-    position: relative;
+    background-image: url(./images/Background-slider.png);
 }
-
+.slider-content {
+    background-image: url(./images/silder1.png);
+    background-position: 124% -67px;
+    background-repeat: no-repeat;
+    background-size: 1050px;
+}
 .slider-wrap {
     width: 100%;
 }
@@ -1075,21 +1144,25 @@ button {
 .title h3 {
     font-size: 30px;
     font-weight: 700;
-    line-height: 37px;
+    line-height: 1;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
+.food-product .spacing{
+    padding: 0 2px ;
+}
 .hot-item .title h3 {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 .product-content {
     text-align: center;
     background-color: #FFF;
     padding: 3px;
-    border-radius: 8px;
+    border-radius: 10px;
 }
+
 .product-img{
-    padding: 20px 16px;
+    padding: 17px;
     position: relative;
 }
 .product-img img {
@@ -1097,8 +1170,9 @@ button {
 }
 .stick{
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    left: 20px;
+    line-height: 1;
 }
 .stick span{
     font-family: 'Dosis';
@@ -1114,11 +1188,11 @@ button {
 }
 .stick span:first-child{
     background-color: #EA0D42;
-    box-shadow: 0 8px 15px 0 rgb(249 214 214);
+    box-shadow: 0px 8px 15px rgba(234, 13, 66, 0.15);
 }
 .stick span:last-child{
     background-color: #1F65CE;
-    box-shadow: 0 8px 15px 0 rgb(214 225 249);
+    box-shadow: 0px 8px 15px rgba(31, 101, 206, 0.15);
 }
 
 .product-item {
@@ -1177,7 +1251,7 @@ button {
     background-color: #FFF;
     border-radius: 100%;
     text-align: center;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 15px 25px rgba(94, 109, 0, 0.1);
 }
 .product-footer-icon i{
     font-size: 14px;
@@ -1210,7 +1284,6 @@ button {
     padding: 10px;
     border-radius: 100%;
     font-size: 14px;
-    line-height: 36px;
 }
 .action-links a:hover i {
     background-color: #96AE00;
@@ -1292,6 +1365,7 @@ button {
 .foryou-text{
     display: inline-block;
     max-width: 416px;
+    font-weight: 500;
     height: auto;
     font-size: 14px;
     line-height: 17.5px;
@@ -1342,7 +1416,7 @@ button {
 .foryou-button button:last-child {
     color: #96AE00;
     background-color: #FFF;
-    border: 1px solid #96AE00;
+    border: 2px solid #96AE00;
 }
 .foryou-button button:first-child:hover,
 .foryou-button button:last-child:hover {
@@ -1382,7 +1456,8 @@ button {
     display: flex;
 }
 .hot-item-product{
-    margin: 30px 0;
+    margin: 31px 0;
+    margin-bottom: 50px;
 }
 .product-item h4 {
     font-size: 13px;
@@ -1395,11 +1470,12 @@ button {
         overflow: hidden;
 }
 .view-hot-item{
-    margin-bottom: 35px;
+    margin-bottom: 80px;
 }
 .view-wrap{
     width: 100%;
     text-align: center;
+    line-height: 1;
 }
 .view-wrap span {
     font-size: 14px;
@@ -1418,9 +1494,10 @@ button {
 /* banner deal */
 .baner-deal{
     background-image: url(./images/banner-deal.png);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     height: 600px;
+    background-repeat: no-repeat;
     position: relative;
 }
 .banner-deal-wrap{
@@ -1549,7 +1626,7 @@ button {
     color: #79819C;
     text-transform: uppercase;
     padding-bottom: 4px;
-    border-bottom: 2px solid #79819C;
+    border-bottom: 2px solid #CFD4DE;
     cursor: pointer;
 }
 .blog-menu li:hover span {
@@ -1579,6 +1656,7 @@ button {
     font-size: 12px;
     line-height: 15px;
     font-weight: 700;
+    text-transform: uppercase;
     color: #96AE00;
     margin: 20px 0;
     align-items: center;
@@ -1615,7 +1693,7 @@ button {
 .header-footer-item span{
     font-size: 12px;
     color: #B0AFCC;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 15px;
 }
 
@@ -1728,9 +1806,11 @@ button {
 .copyright {
     border-top: 1px solid #484492;
     padding: 40px 0;
+    line-height: 1;
 }
 .copyright-wrap{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .copyright-icon {
@@ -1742,17 +1822,25 @@ button {
 }
 .copyright-wrap p{
     color: #B0AFCC;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
+    line-height: 17px;
 }
 .copyright-left p span{
     color: #95ae3c;
 }
 .Engl-USD p {
     color: #FFF;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0 2px;
 }
 .Engl-USD p i {
     font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #B0AFCC;
 }
 .Engl-USD {
     gap: 0 10px;

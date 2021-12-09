@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.slider-img').slick(
+    $('.slider-wrap').slick(
         {
             slidesToScroll: 1,
             // autoplay: true,
@@ -44,6 +44,51 @@ $(document).ready(function(){
     );
 });
 
+// heart- slider
+$(document).ready(function(){
+    $('.slider-heart').slick(
+        {
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left slick-arrow" aria-hidden="true"></i></div>',
+            nextArrow: '<div class="slick-next"><i class="fa fa-angle-right slick-arrow" aria-hidden="true"></i></div>',
+            responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    adaptiveHeight: true,
+                  },
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  },
+                },
+              ],
+        }
+    );
+});
+
+
+const heartClose =  document.querySelector('.heart-close i')
+const heart = document.querySelector('.heart-icon')
+
+heart.onclick = function() {
+    document.querySelector('.heart-content').style.display = 'block'
+    // document.querySelector('.heart-wrap').classList.add('overlay')
+}
+
+heartClose.onclick = function() {
+    document.querySelector('.heart-content').style.display = 'none'
+    // document.querySelector('.heart-content').classList.remove('overlay')
+}
 
 
 // countdown
