@@ -78,7 +78,7 @@ button {
 /* header */
 
 .header {
-    border-bottom: 1px solid rgb(197, 197, 197);
+    border-bottom: 1px solid #E6ECF0;    ;
     position: fixed;
     left: 0;
     right: 0;
@@ -231,6 +231,8 @@ button {
 }
 .navbar-list {
     display: flex;
+    align-items: center;
+    gap: 0 25px;
 }
 .navbar-item span,
 .navbar-item a  {
@@ -239,6 +241,10 @@ button {
     font-size: 14px;
     line-height: 17.5px;
 }
+.navbar-item span{
+    display: flex;
+    align-items: center;
+}
 
 .logo img{
     width: 120px;
@@ -246,7 +252,6 @@ button {
 }
 
 .navbar-item {
-    padding: 8px 20px;
     position: relative;
     cursor: pointer;
 }
@@ -261,9 +266,6 @@ button {
     padding-left: 5px;
     font-weight: 400;
     font-size: 12px;
-    line-height: 33px;
-    position: absolute;
-    top: 7px;
 }
 
 .navbar-item:hover span {
@@ -725,7 +727,7 @@ button {
 .hover-homemenu,.hover-shopmenu,
 .hover-pagehome, .hover-bloghome {
     position: absolute;
-    top:calc(100% + 17px);
+    top:calc(100% + 29px);
     left: 20px;
     width: 200px;
     height: auto;
@@ -887,15 +889,15 @@ button {
 /* slider */
 .slider{
     padding-top: 113px;
+    background-image: url(./images/silder1.png);
+    background-position: 675px 56px;
+    background-size: 1134px 760px;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .slider-wrap {
     width: 100%;
-    background-image: url(./images/silder1.png);
-    background-position: 338px -46px;
-    background-size: 1098px 750px;
-    background-repeat: no-repeat;
-    position: relative;
 }
 .slider-content {
     padding: 100px 0;

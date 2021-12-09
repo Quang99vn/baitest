@@ -1,13 +1,24 @@
-
+@media(min-width: 1400px) {
+    .slider {
+        background-position: 85% 56px;
+        background-size: 1134px 760px;
+    }
+    .slick-next{
+        left: 99%;
+    }
+    .slick-prev{
+        left: -49px;
+    }
+}
 
 
 @media(max-width: 1399px) {
-    .slider-wrap {
-        background-position: 383px 0px;
-        background-size: contain
+    .slider {
+        background-position: 210px 56px;
+        background-size: 1134px 760px;
     }
     .slick-prev {
-        left: -41px;
+        left: -2%;
     }
     .slick-next {
         left: 97.5%;
@@ -39,6 +50,7 @@
 }
 
 @media (max-width: 1199px){
+
    
     .top-header-text, .top-header ul li{
         font-size: 10px;
@@ -48,7 +60,14 @@
         font-size: 10px;
     }
     .slick-prev{
-        left: -50px;
+        left: -10px;
+    }
+    .slick-next{
+        left: 95%;
+    }
+    .slider {
+        background-position: 120px 79px;
+        background-size: 978px 650px;
     }
     .slider-content{
         padding-left: 10px;
@@ -104,13 +123,7 @@
     .social-icon i {
         margin-bottom: 10px;
     }
-    .slick-next{
-        left: 99%;
-    }
-    .slider-wrap {
-        background-size: contain;
-        background-position: 225px;
-    }
+    
     .product-footer-icon i {
         font-size: 12px;
         line-height: 30px;
@@ -166,14 +179,29 @@
     .line{
         display: none;
     }
-    .slider-wrap {
+    .slider {
         background-size: contain;
-        background-position: 80px ;
+        background-position: 87px 50px;
     }
     .slick-prev{
-        left: -39px;
+        left: -18px;
         width: 50px;
         height: 50px;
+    }
+    .slick-next {
+        left: 95%;
+        width: 50px;
+        height: 50px;
+    }
+    .product-slider .slick-prev{
+        width: 36px;
+        height: 36px;
+        left: 0;
+    }
+    .product-slider .slick-next{
+        width: 36px;
+        height: 36px;
+        right: 0;
     }
     .category-slide {
         padding: 0 5px;
@@ -357,11 +385,7 @@
     .copyright-wrap p{
         font-size: 11px;
     }
-    .slick-next {
-        left: 96%;
-        width: 50px;
-        height: 50px;
-    }
+    
     .category-wrap {
         gap: 0 10px;
     }
@@ -631,8 +655,9 @@
         font-size: 42px;
         line-height: 1;
     }
-    .slider-wrap{
-        background-position: 40px 200px;
+    .slider{
+        background-position: right bottom;
+        background-size: contain;
     }
     .slider-content button{
         padding: 10px 20px;
