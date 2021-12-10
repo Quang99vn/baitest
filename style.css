@@ -1103,6 +1103,7 @@ button {
     padding: 30px 20px; 
     background-color: #FFF;
     border-radius: 6px;
+    padding-bottom: 20px;
 }
 .category-item img{
     width: 80px;
