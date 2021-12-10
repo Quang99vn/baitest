@@ -1862,7 +1862,7 @@ button {
 .check-footer {
     display: flex;
     align-items: baseline;
-    gap: 0 4px;
+    gap: 0 10px;
     margin-top: 16px;
 }
 .check-footer p {
