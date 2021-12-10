@@ -1356,7 +1356,7 @@ button {
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-    margin-top: 70px;
+    margin-top: 60px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
