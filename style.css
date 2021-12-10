@@ -960,6 +960,7 @@ button {
 /* slider */
 .slider{
     background-image: url(./images/Background-slider.png);
+    background-size: contain;
 }
 .slider-content {
     background-image: url(./images/silder1.png);

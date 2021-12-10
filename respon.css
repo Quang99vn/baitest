@@ -5,13 +5,16 @@
     .spacing {
         padding: 17.5px 0;
     }
-    .baner-deal {
-        height: 510px;
-    }
 }
 
 
 @media(max-width: 1399px) {
+    .slider{
+        background-size: cover;
+    }
+    .baner-deal {
+        height: 510px;
+    }
     .slider-content {
         background-position: 123% 3px;
         background-size: 900px;
@@ -47,8 +50,10 @@
         top: 20%;
     }
     .baner-deal {
-        height: 436px;
         background-size: cover;
+    }
+    .blog-container {
+        padding: 20px;
     }
 }
 
