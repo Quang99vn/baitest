@@ -81,13 +81,15 @@ const heartClose =  document.querySelector('.heart-close i')
 const heart = document.querySelector('.heart-icon')
 
 heart.onclick = function() {
-    document.querySelector('.heart-content').style.display = 'block'
-    // document.querySelector('.heart-wrap').classList.add('overlay')
+    document.querySelector('.heart-content').style.visibility = "initial"
+    document.querySelector('.heart-overlay').style.display = 'block'
+    document.querySelector('.heart-content .slick-track').style.width = "100%"
+    document.querySelector('.heart-content .slick-track').style.transform = "translate3d(0px, 0px, 0px)"
 }
 
 heartClose.onclick = function() {
-    document.querySelector('.heart-content').style.display = 'none'
-    // document.querySelector('.heart-content').classList.remove('overlay')
+    document.querySelector('.heart-content').style.visibility = "hidden"
+    document.querySelector('.heart-overlay').style.display = 'none'
 }
 
 

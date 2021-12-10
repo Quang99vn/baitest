@@ -132,11 +132,30 @@
         height: 30px;
     }
     .action-links a i {
+        padding: 10px;
         font-size: 10px;
-        line-height: 30px;
     }
     .slider-content .tagline{
         margin-bottom: 30px;
+    }
+    .heart-content{
+        width: 960px;
+    }
+    .heart-content .slick-list{
+        height: 319px;
+    }
+    .stick span {
+        font-size: 9px;
+        width: 30px;
+        height: 15px;
+        line-height: 15px;
+    }
+    .product-img {
+        padding: 12px;
+    }
+    .stick {
+        top: 12px;
+        left: 12px;
     }
 }
 
@@ -399,8 +418,13 @@
         width: 600px;
         padding: 30px;
     }
+    .heart-content .slick-list {
+        height: 319px;
+    }
+    .heart-content{
+        width: 600px;
+    }
 }
-
 @media (max-width: 767px) {
     .top-header{
         height: 22px;
@@ -590,10 +614,6 @@
         width: 12px;
         height: 12px;
     }
-    .icon i{
-        font-size: 12px;
-        line-height: 25px;
-    }
     .bag-icon span{
         width: 12px;
         height: 12px;
@@ -601,10 +621,10 @@
         line-height: 12px;
     }
     .action-links {
-        right: 10px;
+        right: 4px;
     }
     .action-links .icon {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
     .nav-icon{
         margin-right: 8px;
@@ -1020,6 +1040,10 @@
         top: 20px;
         right: 20px;
     }
+    .category-slide {
+        padding: 0;
+    }
+    .heart-content .slick-list {
+        height: 350px;
+    }
 }
-
-
