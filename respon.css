@@ -1,5 +1,13 @@
-@media(min-width: 1400px) {
-  
+@media(min-width: 1600px) {
+    .container {
+        max-width: 1410px;
+    }
+    .spacing {
+        padding: 17.5px 0;
+    }
+    .baner-deal {
+        height: 510px;
+    }
 }
 
 
@@ -94,7 +102,7 @@
         padding:10px 5px;
     }
     .input button {
-        top:5%;
+        top:4%;
         font-size: 10px;
         padding: 15px 15px;
     }
@@ -114,6 +122,10 @@
     }
     .social-icon i {
         margin-bottom: 10px;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 20px;
     }
     
     .product-footer-icon i {
