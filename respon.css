@@ -40,6 +40,7 @@
     }
     .baner-deal {
         height: 436px;
+        background-size: cover;
     }
 }
 
@@ -728,7 +729,6 @@
     .banner-deal-wrap {
         left: 50%;
         width: 350px;
-        padding-left: 20px;
         top: 50%;
     }
     .deal-content{
@@ -769,9 +769,6 @@
     }
     .deal-button button{
         width: 35%;
-    }
-    .baner-deal {
-        background-position: right;
     }
     .input button{
         top: 4%;
@@ -963,7 +960,7 @@
         padding: 0;
     }
     .slider {
-        padding-top: 80px;
+        padding-top: 30px;
     }
     .slider-content-text{
         margin-bottom: 30px;
