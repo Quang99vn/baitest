@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.slider-wrap').slick(
         {
             slidesToScroll: 1,
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: 2000,
             arrows: true,
             prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left slick-arrow" aria-hidden="true"></i></div>',

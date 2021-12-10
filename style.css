@@ -1115,7 +1115,6 @@ button {
     padding: 30px 20px; 
     background-color: #FFF;
     border-radius: 6px;
-    box-shadow: 0px 2px 2px rgb(230, 229, 229);
 }
 .category-item img{
     width: 80px;
@@ -1138,6 +1137,10 @@ button {
 .category-item:hover p{
     color: #96AE00;
     transition: 0.2s;
+}
+.category-item:hover{
+    transition: 0.3s;
+    box-shadow: 0px 15px 25px rgba(94, 109, 0, 0.1);
 }
 
 /* food */
